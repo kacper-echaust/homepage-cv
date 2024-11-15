@@ -13,7 +13,7 @@ const Header = () => {
 						<p>Kacper</p>
 						<p>Echaust</p>
 					</div>
-					<div>
+					<div className={css.lastContainerInLeftSide}>
 						<p>Junior Frontend Developer</p>
 						<p className={css.downloadCv}>
 							<a href='src/downloads/CV-Kacper-Echaust.pdf' download={CV}>

@@ -68,3 +68,39 @@
 	width: 100%;
 	height: 100vh;
 }
+@media (max-width: 768px) {
+	.leftSideContainer div {
+		width: 300px;
+	}
+	.leftSideContainer p {
+		font-size: 14px;
+	}
+	.lastContainerInLeftSide {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+@media (max-width: 576px) {
+	.container {
+		position: relative;
+		flex-direction: column;
+		align-items: center;
+	}
+	.leftSideContainer{
+		height: 100vh;
+		z-index: 2;
+		color: white;
+	}
+	.leftSideContainer a{
+		color: white;
+	}
+	.rightSideContainer{
+		position: absolute;
+		height: 20vh;
+		width: 100%;
+	}
+	.rightSideContainer img {
+		height: 100vh;
+	}
+}
