@@ -1,8 +1,11 @@
+import { Header } from './Components/Header/Header'
+
 const App = () => {
-  return (
-    <>
-    </>
-  )
+	return (
+		<>
+			<Header />
+		</>
+	)
 }
 
 export { App }
