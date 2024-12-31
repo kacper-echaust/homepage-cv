@@ -1,5 +1,6 @@
 import { AboutMe } from './Components/AboutMe/AboutMe'
 import { Header } from './Components/Header/Header'
+import { Projects } from './Components/Projects/Projects'
 import { Skills } from './Components/Skills/Skills'
 
 const App = () => {
@@ -8,6 +9,7 @@ const App = () => {
 			<Header />
 			<AboutMe />
 			<Skills/>
+			<Projects/>
 		</>
 	)
 }
