@@ -56,7 +56,7 @@ const Footer = () => {
 		<Section sectionName='Contact'>
 			<footer className={css.footer}>
 				<form className={css.form} onSubmit={handleSubmit(handleSendForm)} ref={form}>
-					<label htmlFor='name'>Imię</label>
+					<label htmlFor='user_name'>Imię</label>
 					<input
 						type='text'
 						id='user_name'
@@ -70,7 +70,7 @@ const Footer = () => {
 					/>
 					{errors.user_name && <p className={css.error}>{errors.user_name.message}</p>}
 
-					<label htmlFor='email'>E-mail</label>
+					<label htmlFor='user_email'>E-mail</label>
 					<input
 						type='email'
 						id='user_email'
