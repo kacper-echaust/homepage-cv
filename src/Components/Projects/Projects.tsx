@@ -8,7 +8,7 @@ const Projects = () => {
 			<ul className={css.list}>
 				{projects.map((project, index) => {
 					return (
-						<div className={css.projectContainer}>
+						<div className={css.projectContainer} key={index}>
 							<p className={css.projectName}>{project.name}</p>
 							<a href={project.link} key={index}>
 								<img src={project.imgSrc} alt={project.name} />
