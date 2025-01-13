@@ -14,6 +14,6 @@ export const projects = [
 		description:
 			'Stworzona przeze mnie strona barber shopu to nowoczesny projekt z przejrzystym układem, intuicyjną nawigacją i klimatycznym designem, który odzwierciedla charakter miejsca i ułatwia rezerwację wizyt.',
 		imgSrc: barberShopImage,
-		link: 'https:// barbershopvicecity.pl',
+		link: 'https://kacper-echaust.github.io/barber-shop/#/',
 	},
 ]
