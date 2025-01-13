@@ -1,7 +1,7 @@
 import css from './Header.module.scss'
 
 import headerImage from '../../../public/code-5113374_1280.jpg'
-import CV from '../../downloads/CV-Kacper-Echaust.pdf'
+import CV from '../../downloads/CV_Kacper_Echaust.pdf'
 
 const Header = () => {
 	console.log(CV);
