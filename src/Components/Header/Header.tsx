@@ -1,9 +1,10 @@
 import css from './Header.module.scss'
 
 import headerImage from '../../../public/code-5113374_1280.jpg'
-import CV from '../../downloads/CV-Kacper-Echaust.pdf'
+import CV from '../../downloads/CV_Kacper_Echaust.pdf'
 
 const Header = () => {
+	console.log(CV);
 	return (
 		<header className={css.header}>
 			<div className={css.container}>
@@ -16,7 +17,7 @@ const Header = () => {
 					<div>
 						<p>Junior Frontend Developer</p>
 						<p>
-							<a href='src/downloads/CV-Kacper-Echaust.pdf' download={CV}>
+							<a href={CV} download={CV}>
 								Pobierz moje CV
 							</a>
 						</p>

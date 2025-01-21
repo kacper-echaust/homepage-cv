@@ -23,5 +23,6 @@ export const projects = [
 			'Organizacja zadań która zapisuje w localne zadania w pamięci przeglądarki. Możliwość sortowania po dacie oraz odhaczania zadań skończonych.',
 		imgSrc: taskAppImage,
 		link: 'https://kacper-echaust.github.io/task-app/',
+=======
 	},
 ]
