@@ -1,5 +1,6 @@
 import fishkappImage from '../../public/fishkapp.png'
 import barberShopImage from '../../public/barber-shop.png'
+import taskAppImage from '../../public/taskapp.png'
 
 export const projects = [
 	{
@@ -14,6 +15,13 @@ export const projects = [
 		description:
 			'Stworzona przeze mnie strona barber shopu to nowoczesny projekt z przejrzystym układem, intuicyjną nawigacją i klimatycznym designem, który odzwierciedla charakter miejsca i ułatwia rezerwację wizyt.',
 		imgSrc: barberShopImage,
-		link: 'https:// barbershopvicecity.pl',
+		link: 'https://kacper-echaust.github.io/barber-shop/#/',
+	},
+	{
+		name: 'task app',
+		description:
+			'Organizacja zadań która zapisuje w localne zadania w pamięci przeglądarki. Możliwość sortowania po dacie oraz odhaczania zadań skończonych.',
+		imgSrc: taskAppImage,
+		link: 'https://kacper-echaust.github.io/task-app/',
 	},
 ]
