@@ -1,6 +1,6 @@
-import fishkappImage from '../../public/fishkapp.png'
-import barberShopImage from '../../public/barber-shop.png'
-import taskAppImage from '../../public/taskapp.png'
+import fishkappImage from '../images/fishkapp.png'
+import barberShopImage from '../images/barber-shop.png'
+
 
 export const projects = [
 	{
@@ -23,6 +23,5 @@ export const projects = [
 			'Organizacja zadań która zapisuje w localne zadania w pamięci przeglądarki. Możliwość sortowania po dacie oraz odhaczania zadań skończonych.',
 		imgSrc: taskAppImage,
 		link: 'https://kacper-echaust.github.io/task-app/',
-=======
 	},
 ]
