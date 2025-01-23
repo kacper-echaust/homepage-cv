@@ -1,5 +1,6 @@
 import fishkappImage from '../images/fishkapp.png'
 import barberShopImage from '../images/barber-shop.png'
+import taskAppImage from '../images/taskapp.png'
 
 
 export const projects = [

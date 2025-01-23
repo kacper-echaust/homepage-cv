@@ -1,10 +1,8 @@
 import css from './Header.module.scss'
-
 import headerImage from '../../images/code-5113374_1280.jpg'
 import CV from '../../downloads/CV_Kacper_Echaust.pdf'
 
 const Header = () => {
-	console.log(CV);
 	return (
 		<header className={css.header}>
 			<div className={css.container}>
