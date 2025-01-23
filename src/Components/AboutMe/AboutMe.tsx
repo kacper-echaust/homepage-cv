@@ -1,5 +1,5 @@
 import css from './AboutMe.module.scss'
-import myPhoto from '../../../public/kacper-photo.jpg'
+import myPhoto from '../../images/kacper-photo.jpg'
 import { Section } from '../Section/Section'
 
 const AboutMe = () => {

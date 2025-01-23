@@ -1,5 +1,5 @@
-import fishkappImage from '../../public/fishkapp.png'
-import barberShopImage from '../../public/barber-shop.png'
+import fishkappImage from '../images/fishkapp.png'
+import barberShopImage from '../images/barber-shop.png'
 
 export const projects = [
 	{
