@@ -6,6 +6,7 @@ import react from './react.svg'
 import restApi from './rest-api.svg'
 import scss from './scss.svg'
 import typescript from './typescript.svg'
+import redux from './redux.svg'
 
 export const iconsSkills = [
 	{
@@ -39,5 +40,8 @@ export const iconsSkills = [
 	{
 		name: 'Typescript',
 		url: typescript,
+	},{
+		name: 'Redux',
+		url: redux,
 	},
 ]
