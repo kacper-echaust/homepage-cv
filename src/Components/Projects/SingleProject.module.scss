@@ -1,0 +1,62 @@
+.projectContainer {
+	width: 80vw;
+	padding: 50px 0;
+	.contentContainer {
+		display: flex;
+		justify-content: space-around;
+	}
+	.projectName {
+		font-size: 24px;
+		text-transform: uppercase;
+		font-weight: bold;
+		width: 100%;
+	}
+	.imageContainer {
+		width: 45%;
+		img {
+			width: 100%;
+			object-fit: cover;
+			border-radius: 10%;
+			border: 1px solid black;
+		}
+	}
+	.description {
+		width: 45%;
+		height: 100%;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		.link {
+			position: absolute;
+			bottom: 0;
+			text-decoration: none;
+		}
+		.technologiesList {
+			display: flex;
+			list-style: none;
+			li {
+				padding: 5px;
+				font-weight: bold;
+			}
+		}
+		button {
+			margin: 50px 0;
+			padding: 10px 20px;
+			border-radius: 10px;
+			cursor: pointer;
+		}
+	}
+}
+
+@media (max-width: 762px) {
+	.contentContainer {
+		flex-direction: column;
+		.imageContainer {
+			width: 100%;
+		}
+		.description {
+			width: 100%;
+		}
+	}
+}

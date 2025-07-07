@@ -1,6 +1,7 @@
 import { Section } from '../Section/Section'
 import css from './Projects.module.scss'
 import { projects } from '../../data/projects'
+import { SingleProject } from './SingleProject'
 
 const Projects = () => {
 	return (
@@ -8,15 +9,7 @@ const Projects = () => {
 			<ul className={css.list}>
 				{projects.map((project, index) => {
 					return (
-						<div className={css.projectContainer} key={index}>
-							<p className={css.projectName}>{project.name}</p>
-							<a href={project.link} key={index}>
-								<img src={project.imgSrc} alt={project.name} />
-								<div className={css.description}>
-									<p>{project.description}</p>
-								</div>
-							</a>
-						</div>
+						<SingleProject key={index} project={project}/>
 					)
 				})}
 			</ul>
