@@ -1,6 +1,10 @@
 .section {
 	min-height: 100vh;
 	padding: 0 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 	.sectionName {
 		position: relative;
 		width: 100%;
