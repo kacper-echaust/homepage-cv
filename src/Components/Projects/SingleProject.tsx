@@ -1,3 +1,4 @@
+import { Button } from '../Button/Button'
 import css from './SingleProject.module.scss'
 type ProjectType = {
 	project: {
@@ -25,7 +26,7 @@ const SingleProject = ({ project }: ProjectType) => {
 						))}
 					</ul>
 					<a href={project.link}>
-						<button>Przejdź do projektu</button>
+						<Button text='Przejdź do projektu'/>
 					</a>
 				</div>
 			</div>
