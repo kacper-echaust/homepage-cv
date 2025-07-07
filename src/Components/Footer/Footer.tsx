@@ -3,6 +3,7 @@ import { Section } from '../Section/Section'
 import css from './Footer.module.scss'
 import emailjs from 'emailjs-com'
 import { useForm } from 'react-hook-form'
+import { Button } from '../Button/Button'
 
 type FormType = {
 	user_name: string
@@ -96,7 +97,7 @@ const Footer = () => {
 						})}></textarea>
 					{errors.message && <p className={css.error}>{errors.message.message}</p>}
 
-					<input type='submit' />
+					<Button type='submit' text='Wyślij'/>
 				</form>
 				{showAlert && <AlertPopUp />}
 			</footer>
