@@ -1,7 +1,7 @@
-import fishkappImage from '../../public/fishkapp.png'
-import barberShopImage from '../../public/barber-shop.png'
-import taskAppImage from '../../public/taskapp.png'
-import taskAppReduxImage from '../../public/taskappredux.png'
+import fishkappImage from '../images/fishkapp.png'
+import barberShopImage from '../images/barber-shop.png'
+import taskAppImage from '../images/taskapp.png'
+import taskAppReduxImage from '../images/taskappredux.png'
 
 export const projects = [
 	{
