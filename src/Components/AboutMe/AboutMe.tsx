@@ -1,11 +1,16 @@
 import css from './AboutMe.module.scss'
 import myPhoto from '../../images/kacper-photo.jpg'
 import { Section } from '../Section/Section'
+import { motion } from 'framer-motion'
 
 const AboutMe = () => {
 	return (
 		<Section sectionName='about me'>
-			<div className={css.container}>
+			<motion.div
+				initial={{ opacity: 0 }}
+				whileInView={{ opacity: 1 }}
+				transition={{ duration: 0.6, ease: 'easeInOut' }}
+				className={css.container}>
 				<div className={css.imageContainer}>
 					<img src={myPhoto} alt='Kacper Photo' />
 				</div>
@@ -30,7 +35,7 @@ const AboutMe = () => {
 						przyczynić się do sukcesu projektów.
 					</p>
 				</div>
-			</div>
+			</motion.div>
 		</Section>
 	)
 }

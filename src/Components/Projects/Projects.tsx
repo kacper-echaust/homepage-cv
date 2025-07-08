@@ -9,7 +9,7 @@ const Projects = () => {
 			<ul className={css.list}>
 				{projects.map((project, index) => {
 					return (
-						<SingleProject key={index} project={project}/>
+						<SingleProject key={index} project={project} index={index}/>
 					)
 				})}
 			</ul>
