@@ -1,5 +1,6 @@
 import { Button } from '../Button/Button'
 import css from './SingleProject.module.scss'
+import { motion } from 'framer-motion'
 type ProjectType = {
 	project: {
 		name: string
@@ -8,11 +9,17 @@ type ProjectType = {
 		link: string
 		technologies: string[]
 	}
+	index: number
 }
 
-const SingleProject = ({ project }: ProjectType) => {
+const SingleProject = ({ project, index }: ProjectType) => {
+	const fromWhere = index % 2 === 0 ? 1000 : -1000
 	return (
-		<div className={css.projectContainer}>
+		<motion.div
+			className={css.projectContainer}
+			initial={{ x: fromWhere, opacity: 0 }}
+			whileInView={{ x: 0, opacity: 1 }}
+			transition={{ duration: 0.6, ease: 'easeOut' }}>
 			<p className={css.projectName}>{project.name}</p>
 			<div className={css.contentContainer}>
 				<div className={css.imageContainer}>
@@ -26,11 +33,11 @@ const SingleProject = ({ project }: ProjectType) => {
 						))}
 					</ul>
 					<a href={project.link}>
-						<Button text='Przejdź do projektu'/>
+						<Button text='Przejdź do projektu' />
 					</a>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	)
 }
 
