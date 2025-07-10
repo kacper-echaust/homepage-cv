@@ -12,51 +12,35 @@
 			width: 60%;
 			div {
 				min-height: 100px;
-			}
-			div:nth-of-type(1) {
 				display: flex;
 				flex-direction: column;
 				text-align: center;
-				p {
-					font-size: 64px;
-					text-transform: none;
-					padding: 0;
-					margin: 0;
+				a {
+					position: relative;
+					padding: 0 20px;
+					text-decoration: none;
+					font-weight: bold;
+					color: black;
+					cursor: pointer;
+				}
+				a::after{
+					content: '';
+					position: absolute;
+					left:0;
+					bottom: -2px;
+					height: 2px;
+					background-color: black;
+					opacity: 0;
+					transition: 0.4s;
+				}
+				a:hover::after{
+					width: 100%;
+					opacity: 1;
 				}
 			}
-			div:nth-of-type(2) {
-				display: flex;
-				justify-content: space-around;
-				width: 80%;
-
-				p:nth-of-type(2) {
-					overflow: hidden;
-					a::after {
-						content: '';
-						display: block;
-						position: absolute;
-						left: -200px;
-						width: 100%;
-						height: 2px;
-						background-color: black;
-						transition: 0.5s;
-					}
-					a:hover::after {
-						left: 0;
-					}
-				}
-			}
-			p {
-				text-transform: uppercase;
-			}
-			a {
-				position: relative;
-				height: 100%;
-				padding: 0 20px;
-				text-decoration: none;
+			div span:first-child {
 				font-weight: bold;
-				color: black;
-				cursor: pointer;
+				font-size: 32px;
 			}
 		}
 		.imageContainer {
