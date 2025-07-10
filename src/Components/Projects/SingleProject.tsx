@@ -13,7 +13,7 @@ type ProjectType = {
 }
 
 const SingleProject = ({ project, index }: ProjectType) => {
-	const fromWhere = index % 2 === 0 ? 1000 : -1000
+	const fromWhere = index % 2 === 0 ? 100 : -100
 	return (
 		<motion.div
 			className={css.projectContainer}
