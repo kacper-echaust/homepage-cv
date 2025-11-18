@@ -2,6 +2,7 @@ import fishkappImage from "../images/fishkapp.png";
 import barberShopImage from "../images/barber-shop.png";
 import taskAppImage from "../images/taskapp.png";
 import taskAppReduxImage from "../images/taskappredux.png";
+import loginApp from "../images/login-app.png";
 
 export const projects = [
   {
@@ -49,5 +50,21 @@ export const projects = [
     imgSrc: "W trakcie budowy",
     technologies: ["React", "React Native", "Typescript", "Expo-router"],
     link: "https://github.com/kacper-echaust/Transactions-mobile-app",
+  },
+  {
+    name: "Login App",
+    description:
+      "Aplikacja logowania oraz rejestracji. Zapisuję dane do bazy danych.",
+    imgSrc: loginApp,
+    technologies: [
+      "React",
+      "React router",
+      "Typescript",
+      "Hooks",
+      "shadcn",
+      "TawilwindCSS",
+      "Firebase",
+    ],
+    link: "https://login-app-kacper.netlify.app/",
   },
 ];
