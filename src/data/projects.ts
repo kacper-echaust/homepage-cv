@@ -2,6 +2,9 @@ import fishkappImage from "../images/fishkapp.png";
 import barberShopImage from "../images/barber-shop.png";
 import taskAppImage from "../images/taskapp.png";
 import taskAppReduxImage from "../images/taskappredux.png";
+import loginApp from "../images/login-app.png";
+import calculator from "../images/calculator.png";
+import mamPlan from "../images/mam-plan.png";
 
 export const projects = [
   {
@@ -49,5 +52,36 @@ export const projects = [
     imgSrc: "W trakcie budowy",
     technologies: ["React", "React Native", "Typescript", "Expo-router"],
     link: "https://github.com/kacper-echaust/Transactions-mobile-app",
+  },
+  {
+    name: "Login App",
+    description:
+      "Aplikacja logowania oraz rejestracji. Zapisuję dane do bazy danych.",
+    imgSrc: loginApp,
+    technologies: [
+      "React",
+      "React router",
+      "Typescript",
+      "Hooks",
+      "shadcn",
+      "TawilwindCSS",
+      "Firebase",
+      "React-hook-form",
+    ],
+    link: "https://login-app-kacper.netlify.app/",
+  },
+  {
+    name: "Kalkulator",
+    description: "Prosty kalkulator",
+    imgSrc: calculator,
+    technologies: ["React", "Typescript", "TailwindCSS", "shadcn"],
+    link: "https://calculator-ecru-omega.vercel.app/",
+  },
+  {
+    name: "Mam plan",
+    description: "Portfolio firmy mam plan",
+    imgSrc: mamPlan,
+    technologies: ["React", "Typescript", "TailwindCSS", "Firebase"],
+    link: "https://mam-plan.netlify.app/",
   },
 ];
