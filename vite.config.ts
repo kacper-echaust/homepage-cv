@@ -1,15 +1,15 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react-swc'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react-swc";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-	plugins: [react()],
-	base: '/homepage-cv',
-	css: {
-		preprocessorOptions: {
-			scss: {
-				silenceDeprecations: ['legacy-js-api'],
-			},
-		},
-	},
-})
+  plugins: [react()],
+  base: "/",
+  css: {
+    preprocessorOptions: {
+      scss: {
+        silenceDeprecations: ["legacy-js-api"],
+      },
+    },
+  },
+});
