@@ -3,6 +3,7 @@ import { Section } from "../Section/Section";
 import css from "./Contact.module.scss";
 import emailjs from "emailjs-com";
 import { useForm } from "react-hook-form";
+import { Button } from "../Button/Button";
 
 type FormType = {
   user_name: string;
@@ -109,7 +110,7 @@ const Contact = () => {
             <p className={css.error}>{errors.message.message}</p>
           )}
 
-          <input type="submit" />
+          <Button type="submit" text="Send" className={css.submitButton} />
         </form>
         {showAlert && <AlertPopUp />}
       </footer>
