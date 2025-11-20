@@ -10,7 +10,7 @@ export const projects = [
   {
     name: "fishkapp",
     description:
-      "Aplikacja do dodawania kart pozwala tworzyć i zarządzać kartami z treściami, takimi jak tekst, obrazy czy linki. Prosty interfejs sprawia, że świetnie nadaje się do notatek.",
+      "A lightweight card-based app designed for quick note-taking, organizing ideas, and saving content. With an intuitive interface and clean layout, it makes capturing thoughts fast and effortless.",
     imgSrc: fishkappImage,
     technologies: [
       "React",
@@ -24,7 +24,7 @@ export const projects = [
   {
     name: "barber shop",
     description:
-      "Stworzona przeze mnie strona barber shopu to nowoczesny projekt z przejrzystym układem, intuicyjną nawigacją i klimatycznym designem, który odzwierciedla charakter miejsca i ułatwia rezerwację wizyt.",
+      "A modern and stylish barber shop website designed to reflect the brand’s vibe. Smooth navigation, a clean layout, and bold visuals create an engaging experience that helps users easily explore services and book appointments.",
     imgSrc: barberShopImage,
     technologies: ["React", "React-Router", "Typescript", "CSS modules"],
     link: "https://kacper-echaust.github.io/barber-shop/#/",
@@ -32,7 +32,7 @@ export const projects = [
   {
     name: "task app",
     description:
-      "Organizacja zadań która zapisuje w localne zadania w pamięci przeglądarki. Możliwość sortowania po dacie oraz odhaczania zadań skończonych.",
+      "A simple yet powerful task manager that stores data in the browser’s local storage. It allows users to sort tasks by date, mark completed items, and stay organized throughout the day.",
     imgSrc: taskAppImage,
     technologies: ["React", "Typescript", "Sass"],
     link: "https://kacper-echaust.github.io/task-app/",
@@ -40,23 +40,23 @@ export const projects = [
   {
     name: "task app redux",
     description:
-      "Organizacja zadań która zapisuje w lokal storage zadania wykonana przy użyciu redux",
+      "A more advanced version of the task manager, built with Redux for state management. It offers improved structure, better scalability, and a smooth user experience for organizing daily tasks.",
     imgSrc: taskAppReduxImage,
     technologies: ["React", "Redux", "Typescript", "Sass", "shadcn"],
     link: "https://kacper-echaust.github.io/task-app-redux/",
   },
   {
-    name: "Income & Expense Tracker - W trakcie budowy",
+    name: "Income & Expense Tracker — In progress",
     description:
-      "Aplikacja mobilna pozwalająca dodawanie transakcji. Przelicza stan konta, sumę wydatków i przychodów.",
-    imgSrc: "W trakcie budowy",
+      "A mobile-first finance tracker for monitoring expenses and income. It provides real-time balance calculations and a clean, intuitive interface for managing personal finances on the go.",
+    imgSrc: "In progress",
     technologies: ["React", "React Native", "Typescript", "Expo-router"],
     link: "https://github.com/kacper-echaust/Transactions-mobile-app",
   },
   {
     name: "Login App",
     description:
-      "Aplikacja logowania oraz rejestracji. Zapisuję dane do bazy danych.",
+      "A secure authentication app featuring user registration and login, built with Firebase. Designed with clean UI components, form validation, and a smooth user flow.",
     imgSrc: loginApp,
     technologies: [
       "React",
@@ -64,22 +64,24 @@ export const projects = [
       "Typescript",
       "Hooks",
       "shadcn",
-      "TawilwindCSS",
+      "TailwindCSS",
       "Firebase",
       "React-hook-form",
     ],
     link: "https://login-app-kacper.netlify.app/",
   },
   {
-    name: "Kalkulator",
-    description: "Prosty kalkulator",
+    name: "Calculator",
+    description:
+      "A minimalist and responsive calculator with a clean interface. Built for simplicity and speed, it demonstrates UI precision and React component reusability.",
     imgSrc: calculator,
     technologies: ["React", "Typescript", "TailwindCSS", "shadcn"],
     link: "https://calculator-ecru-omega.vercel.app/",
   },
   {
-    name: "Mam plan",
-    description: "Portfolio firmy mam plan",
+    name: "Mam Plan",
+    description:
+      "A professional portfolio website created for the Mam Plan agency. It showcases services, achievements, and brand identity through a modern, clean, and fully responsive design.",
     imgSrc: mamPlan,
     technologies: ["React", "Typescript", "TailwindCSS", "Firebase"],
     link: "https://mam-plan.netlify.app/",
