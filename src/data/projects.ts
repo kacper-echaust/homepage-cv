@@ -1,8 +1,9 @@
 import fishkappImage from "../images/fishkapp.png";
 import taskAppReduxImage from "../images/taskappredux.png";
 import mamPlan from "../images/mam-plan.png";
+import { SingleProjectType } from "../types";
 
-export const projects = [
+export const projects: SingleProjectType[] = [
   {
     name: "fishkapp",
     description:
