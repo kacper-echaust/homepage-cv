@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const Skills = () => {
   return (
-    <Section sectionName="skills">
+    <Section sectionName="umiejętności">
       <ul className={css.list}>
         {iconsSkills.map((icon, index) => {
           return (
