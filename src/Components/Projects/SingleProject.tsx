@@ -12,8 +12,8 @@ const SingleProject = ({ project, index }: ProjectType) => {
   return (
     <motion.div
       className={css.projectContainer}
-      initial={{ x: fromWhere, opacity: 0 }}
-      whileInView={{ x: 0, opacity: 1 }}
+      initial={{ translateX: fromWhere, opacity: 0 }}
+      whileInView={{ translateX: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
       <p className={css.projectName}>{project.name}</p>

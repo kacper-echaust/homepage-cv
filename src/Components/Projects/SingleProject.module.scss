@@ -14,7 +14,7 @@
   }
   .imageContainer {
     img {
-      width: 100%;
+      max-width: 100%;
       border-radius: 10%;
       border: 1px solid black;
     }
@@ -27,7 +27,9 @@
 
     .technologiesList {
       display: flex;
-      justify-content: space-around;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
       width: 100%;
       list-style: none;
       li {
