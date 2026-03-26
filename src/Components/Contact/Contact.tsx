@@ -56,7 +56,7 @@ const Contact = () => {
     );
   };
   return (
-    <Section sectionName="kontakt">
+    <Section sectionName="kontakt" id="contact">
       <footer className={css.footer}>
         <form
           className={css.form}
