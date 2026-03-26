@@ -29,16 +29,16 @@ const Contact = () => {
     if (!form.current) return;
     emailjs.sendForm(service_id, template_id, form.current, user_id).then(
       () => {
-        setAlertText("The message was sent successfully.");
+        setAlertText("Wiadomość została wysłana pomyślnie.");
         setShowAlert(true);
         console.log("SUCCES");
         reset();
       },
       (error) => {
-        setAlertText("Error sending message. Please try again.");
+        setAlertText("Error. Spróbuj ponownie.");
         setShowAlert(true);
         console.log("FAILED...", error);
-      }
+      },
     );
   };
   const AlertPopUp = () => {
@@ -50,28 +50,28 @@ const Contact = () => {
             setShowAlert(false);
           }}
         >
-          Close
+          Zamknij
         </button>
       </div>
     );
   };
   return (
-    <Section sectionName="Contact">
+    <Section sectionName="kontakt" id="contact">
       <footer className={css.footer}>
         <form
           className={css.form}
           onSubmit={handleSubmit(handleSendForm)}
           ref={form}
         >
-          <label htmlFor="user_name">First Name</label>
+          <label htmlFor="user_name">Imię</label>
           <input
             type="text"
             id="user_name"
             {...register("user_name", {
-              required: "Name is required",
+              required: "Imię jest wymagane",
               pattern: {
                 value: /^[a-zA-Z]+$/,
-                message: "The name is incorrect",
+                message: "Imię jest nieprawidłowe",
               },
             })}
           />
@@ -84,10 +84,10 @@ const Contact = () => {
             type="email"
             id="user_email"
             {...register("user_email", {
-              required: "Email is required",
+              required: "Email jest wymagany",
               pattern: {
                 value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
-                message: "The email is incorrect",
+                message: "Email jest nieprawidłowy",
               },
             })}
           />
@@ -95,14 +95,14 @@ const Contact = () => {
             <p className={css.error}>{errors.user_email.message}</p>
           )}
 
-          <label htmlFor="message">Message</label>
+          <label htmlFor="message">Wiadomość</label>
           <textarea
             id="message"
             {...register("message", {
-              required: "Wiadomość jest wymagana",
+              required: "Message jest wymagana",
               minLength: {
                 value: 10,
-                message: "The message must be at least 10 characters long.",
+                message: "Wiadomość musi mieć minimum 10 znaków",
               },
             })}
           ></textarea>
@@ -110,7 +110,7 @@ const Contact = () => {
             <p className={css.error}>{errors.message.message}</p>
           )}
 
-          <Button type="submit" text="Send" className={css.submitButton} />
+          <Button type="submit" text="Wyślij" className={css.submitButton} />
         </form>
         {showAlert && <AlertPopUp />}
       </footer>

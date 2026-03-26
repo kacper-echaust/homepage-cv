@@ -1,0 +1,45 @@
+.footer {
+  width: 100%;
+  height: 200px;
+  background-color: #1f2937;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  li {
+    list-style: none;
+    cursor: pointer;
+  }
+  ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  .nameIconsContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    .leftSide {
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .rightSide {
+      img {
+        width: 30px;
+        height: 30px;
+        padding: 10px;
+      }
+    }
+  }
+  .linksContainer {
+    a {
+      text-decoration: none;
+      color: white;
+      transition: color 0.3s ease-in-out;
+    }
+    a:hover {
+      color: gray;
+    }
+  }
+}

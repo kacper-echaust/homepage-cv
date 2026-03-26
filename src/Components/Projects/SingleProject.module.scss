@@ -1,9 +1,10 @@
 .projectContainer {
-  width: 80vw;
-  padding: 50px 0;
   .contentContainer {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    justify-items: center;
+    gap: 50px;
   }
   .projectName {
     font-size: 24px;
@@ -12,17 +13,13 @@
     width: 100%;
   }
   .imageContainer {
-    width: 45%;
     img {
-      width: 100%;
-      object-fit: cover;
+      max-width: 100%;
       border-radius: 10%;
       border: 1px solid black;
     }
   }
   .description {
-    width: 45%;
-    height: 100%;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -30,9 +27,12 @@
 
     .technologiesList {
       display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
       list-style: none;
       li {
-        padding: 5px;
         font-weight: bold;
       }
     }
@@ -49,18 +49,6 @@
       .secondButton {
         background-color: rgb(144, 144, 144);
       }
-    }
-  }
-}
-
-@media (max-width: 762px) {
-  .contentContainer {
-    flex-direction: column;
-    .imageContainer {
-      width: 100%;
-    }
-    .description {
-      width: 100%;
     }
   }
 }

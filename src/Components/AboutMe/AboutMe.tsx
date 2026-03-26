@@ -1,11 +1,11 @@
 import css from "./AboutMe.module.scss";
-import myPhoto from "../../images/kacper-photo.jpg";
+import myPhoto from "../../images/portfolio-photo.jpg";
 import { Section } from "../Section/Section";
 import { motion } from "framer-motion";
 
 const AboutMe = () => {
   return (
-    <Section sectionName="about me">
+    <Section sectionName="o mnie" id="about">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -18,24 +18,24 @@ const AboutMe = () => {
         <div className={css.descriptionContainer}>
           <h3>Hej!</h3>
           <p>
-            Hi! I'm a beginner front-end developer who's passionate about
-            developing my programming skills. I currently work in a warehouse as
-            a Key Account Specialist, where I learned discipline, work
-            organization, and effective problem-solving. In my free time, I'm
-            actively expanding my programming knowledge, focusing on web
-            technologies.
+            Pracuję jako Koordynator Kluczowych Klientów w środowisku
+            magazynowym, gdzie zarządzam 7‑osobowym zespołem i odpowiadam za
+            sprawną realizację wysyłek dla najważniejszych klientów firmy. Na co
+            dzień dbam o organizację pracy, komunikację i terminowość — lubię,
+            gdy wszystko działa jak dobrze naoliwiona maszyna.
           </p>
           <p>
-            I work on projects that allow me to gain practical experience – from
-            creating responsive websites to more advanced web applications. I
-            regularly attend online courses, learn from documentation, and
-            develop my skills through practice. I'm ambitious, motivated, and
-            open to new challenges.
+            Po godzinach angażuję się w działalność Fundacji Szczęśliwsi, gdzie
+            współtworzę stronę internetową i pracuję w zespole nad rozwojem jej
+            funkcjonalności. To połączenie pracy zespołowej i technologii daje
+            mi ogromną satysfakcję.
           </p>
           <p>
-            I believe that my previous development and determination will allow
-            me to quickly adapt to working in a front-end team and contribute to
-            the success of projects.
+            W wolnym czasie stawiam na sport i podróże, a równolegle intensywnie
+            rozwijam się jako frontend developer. Uczę się codziennie, buduję
+            projekty i szukam swojej pierwszej zawodowej szansy w branży IT —
+            miejsca, w którym będę mógł połączyć technologię, kreatywność i
+            doświadczenie w pracy z ludźmi.
           </p>
         </div>
       </motion.div>

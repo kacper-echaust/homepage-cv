@@ -34,7 +34,7 @@ This portfolio website serves as a personal platform to:
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/yourusername/portfolio-website.git
+   git clone https://github.com/kacper-echaust/portfolio-website.git
    ```
 
 2. **Install Dependencies:**

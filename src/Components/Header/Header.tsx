@@ -16,14 +16,22 @@ const Header = () => {
         <div className={css.contentContainer}>
           <div>
             <Typewriter text="Kacper Echaust" speed={70} />
-            <Typewriter text="Junior Frontend Developer" speed={100} />
+            <Typewriter text="Frontend Developer" speed={100} />
           </div>
           <div>
-            <p>
+            <motion.p
+              animate={{ y: [0, -10, 0] }}
+              transition={{
+                repeat: Infinity,
+                duration: 2,
+                ease: "easeInOut",
+              }}
+              whileHover={{ y: [0, 0, 0] }}
+            >
               <a href={CV} download={CV}>
-                Download my CV
+                Pobierz moje CV
               </a>
-            </p>
+            </motion.p>
           </div>
         </div>
         <div className={css.imageContainer}>

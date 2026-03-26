@@ -1,14 +1,9 @@
+import { SingleProjectType } from "../../types";
 import { Button } from "../Button/Button";
 import css from "./SingleProject.module.scss";
 import { motion } from "framer-motion";
 type ProjectType = {
-  project: {
-    name: string;
-    description: string;
-    imgSrc: string;
-    link: string;
-    technologies: string[];
-  };
+  project: SingleProjectType;
   index: number;
 };
 
@@ -17,8 +12,8 @@ const SingleProject = ({ project, index }: ProjectType) => {
   return (
     <motion.div
       className={css.projectContainer}
-      initial={{ x: fromWhere, opacity: 0 }}
-      whileInView={{ x: 0, opacity: 1 }}
+      initial={{ translateX: fromWhere, opacity: 0 }}
+      whileInView={{ translateX: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
       <p className={css.projectName}>{project.name}</p>
@@ -34,10 +29,10 @@ const SingleProject = ({ project, index }: ProjectType) => {
             ))}
           </ul>
           <div className={css.linkContainer}>
-            <a href={project.link}>
-              <Button text="Przejdź do projektu" />
+            <a href={project.live}>
+              <Button text="Przejdź do live" />
             </a>
-            <a href="">
+            <a href={project.github}>
               <Button className={css.secondButton} text="Przejdź do github" />
             </a>
           </div>
