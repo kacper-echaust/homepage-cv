@@ -1,20 +1,17 @@
-import { Section } from '../Section/Section'
-import css from './Projects.module.scss'
-import { projects } from '../../data/projects'
-import { SingleProject } from './SingleProject'
+import { Section } from "../Section/Section";
+import { projects } from "../../data/projects";
+import { SingleProject } from "./SingleProject";
 
 const Projects = () => {
-	return (
-		<Section sectionName='projects'>
-			<ul className={css.list}>
-				{projects.map((project, index) => {
-					return (
-						<SingleProject key={index} project={project} index={index}/>
-					)
-				})}
-			</ul>
-		</Section>
-	)
-}
+  return (
+    <Section sectionName="projekty">
+      <ul>
+        {projects.map((project, index) => {
+          return <SingleProject key={index} project={project} index={index} />;
+        })}
+      </ul>
+    </Section>
+  );
+};
 
-export { Projects }
+export { Projects };
