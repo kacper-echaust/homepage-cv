@@ -99,7 +99,7 @@ const Contact = () => {
           <textarea
             id="message"
             {...register("message", {
-              required: "Message is required",
+              required: "Wiadomość jest wymagana",
               minLength: {
                 value: 10,
                 message: "The message must be at least 10 characters long.",
